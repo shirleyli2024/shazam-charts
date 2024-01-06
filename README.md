@@ -1,6 +1,16 @@
 # Shazam Charts
 Python files to extract shazam chart data (using RapidAPI) into SQLite3 to develop Power BI Reports.
 
+## Before running the scripts
+- Edit the directory path in each script to connect to the database.
+  ```python
+  db_path = os.path.join("Enter directory path here")
+  ```
+  For example:
+  ```python
+  db_path = os.path.join("C:\\", "Programs", "SQLite")
+- Ensure that a database is created in SQLite for the connection.
+
 ## Shazam Charts Data Extraction Guide
 
 1.	In the Windows Start Menu, open Windows Task Scheduler.
