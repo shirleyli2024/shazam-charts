@@ -41,7 +41,7 @@ def truncate_data(conn):
 def fetch_and_store_country_data(countryId, conn):
     try:
         # URL for API request
-        # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for Top, Top tracks in country
+        # Go to https://rapidapi.com/diyorbekkanal/api/shazam-api6 to subscibe to the API and get the code snippet for Top, Top tracks in country
         url = "https://shazam-api6.p.rapidapi.com/shazam/top_tracks_country"
         querystring = {"country_code":countryId,"limit":"10"}
         headers = {
