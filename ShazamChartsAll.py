@@ -40,10 +40,12 @@ def truncate_data(conn):
 
 def fetch_and_store_country_data(countryId, conn):
     try:
+        # URL for API request
+        # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for Top, Top tracks in country
         url = "https://shazam-api6.p.rapidapi.com/shazam/top_tracks_country"
         querystring = {"country_code":countryId,"limit":"10"}
         headers = {
-        'X-RapidAPI-Key': '6de9684d0dmsh74ed79eb41613bep188545jsn614a11644762',
+        'X-RapidAPI-Key': #Copy and paste the key from the '(Python) Requests' Code snippet section,
         'X-RapidAPI-Host': 'shazam-api6.p.rapidapi.com'
         }
         response = requests.get(url, headers=headers, params=querystring)
