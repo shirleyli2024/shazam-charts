@@ -22,12 +22,14 @@ try:
         cursor.execute('''DROP TABLE IF EXISTS ShazamAustraliaGenre''')
         conn.commit()
 
-
+    
     def fetch_and_store_genre_data(genreName, conn):
+        # URL for API request
+        # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for charts/get-top-songs-in_country_by_genre
         url = "https://shazam-api7.p.rapidapi.com/charts/get-top-songs-in_country_by_genre"
         querystring = {"country_code":"AU","genre": genreName,"limit":"10"}
         headers = {
-            "X-RapidAPI-Key": "a5d70efaffmsh0335d8f09b26e19p1d8e0fjsn4a769b191916",
+            "X-RapidAPI-Key": #Copy and paste the key from the '(Python) Requests' Code snippet section,
             "X-RapidAPI-Host": "shazam-api7.p.rapidapi.com"
         }
 
