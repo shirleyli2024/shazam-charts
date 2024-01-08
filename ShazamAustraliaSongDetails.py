@@ -45,10 +45,12 @@ def truncate_data(conn):
     
 # A function to use song IDs to get the details of the songs
 def fetch_and_store_song_details(songId, conn):
+    # URL for API request
+    # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for songs/get_details
     url = "https://shazam-api7.p.rapidapi.com/songs/get_details"
     querystring = {"id":songId}
     headers = {
-        "X-RapidAPI-Key": "6de9684d0dmsh74ed79eb41613bep188545jsn614a11644762",
+        "X-RapidAPI-Key": #Copy and paste the key from the '(Python) Requests' Code snippet section,
         "X-RapidAPI-Host": "shazam-api7.p.rapidapi.com"
     }
     response = requests.get(url, headers=headers, params=querystring)
