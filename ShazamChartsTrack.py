@@ -10,7 +10,7 @@ def truncate_data(conn):
 
 def fetch_and_store_chart_data(conn):
     # URL for API request
-    # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for charts/track
+    # Go to https://rapidapi.com/apidojo/api/shazam to subscibe to the API and get the code snippet for charts/track
     url = "https://shazam.p.rapidapi.com/charts/track"
     querystring = {"locale": "en-US", "pageSize": "10", "startFrom": "0"}
     headers = {
