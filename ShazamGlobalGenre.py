@@ -23,7 +23,9 @@ def truncate_data(conn):
 
 def fetch_and_store_genre_data(genreName, conn):
     try:
-        url = "https://shazam-api7.p.rapidapi.com/charts/get-top-songs-in_world_by_genre"
+        # URL for API request
+        # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for charts/get-top-songs-in_world_by_genre
+        url = #Copy and paste the key from the '(Python) Requests' Code snippet section,
         querystring = {"genre":genreName,"limit":"10"}
 
         headers = {
