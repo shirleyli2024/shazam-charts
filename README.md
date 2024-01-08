@@ -2,14 +2,20 @@
 Python files to extract shazam chart data (using RapidAPI) into SQLite3 to develop Power BI Reports.
 
 ## Before running the scripts
-- Edit the directory path in each script to connect to the database.
+### Edit the directory path in each script to connect to the database.
   ```python
   db_path = os.path.join("Enter directory path here")
   ```
   For example:
   ```python
   db_path = os.path.join("C:\\", "Programs", "SQLite")
-- Ensure that a database is created in SQLite for the connection.
+  ```
+### Ensure that a database is created in SQLite for the connection.
+- In this code set, a database named 'Shazam.db' was used. If the user creates a database with a name other than 'Shazam.db', the code will need to be updated to reflect the name change.
+### Sign up for a RapidAPI account at https://rapidapi.com.
+- Access the RapidAPI link provided in the files to subscribe to the required APIs.
+- In the RapidAPI webpage, selet 'Python' and 'Request' under Code Snippets.
+- Copy and paste the code snippet into as per instruction in the code.
 
 ## Shazam Charts Data Extraction Guide
 
