@@ -9,10 +9,12 @@ def truncate_data(conn):
     conn.commit()
 
 def fetch_and_store_chart_data(conn):
+    # URL for API request
+    # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for charts/track
     url = "https://shazam.p.rapidapi.com/charts/track"
     querystring = {"locale": "en-US", "pageSize": "10", "startFrom": "0"}
     headers = {
-        "X-RapidAPI-Key": "300268471bmshfeb05846b012d95p13ad64jsn46325262a467",
+        "X-RapidAPI-Key": #Copy and paste the key from the '(Python) Requests' Code snippet section,
         "X-RapidAPI-Host": "shazam.p.rapidapi.com"
     }
     
