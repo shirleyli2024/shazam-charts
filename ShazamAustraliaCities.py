@@ -28,10 +28,11 @@ try:
     # Fetch and store city data function
     def fetch_and_store_city_data(cityName, conn):
         # URL for API request
+        # Go to https://rapidapi.com/yourdevmail/api/shazam-api7 to subscibe to the API and get the code snippet for charts/get-top-songs-in-city
         url = "https://shazam-api7.p.rapidapi.com/charts/get-top-songs-in-city"
         querystring = {"country_code":"AU","city_name": cityName,"limit":"10"}
         headers = {
-            "X-RapidAPI-Key": "a5d70efaffmsh0335d8f09b26e19p1d8e0fjsn4a769b191916",
+            "X-RapidAPI-Key": # Copy and paste the key from the '(Python) Requests' Code snippet section,
             "X-RapidAPI-Host": "shazam-api7.p.rapidapi.com"
         }
         response = requests.get(url, headers=headers, params=querystring)
